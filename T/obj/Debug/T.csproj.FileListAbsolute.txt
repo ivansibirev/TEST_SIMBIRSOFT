@@ -1,0 +1,11 @@
+D:\#c__\T\T\T\bin\Debug\T.exe.config
+D:\#c__\T\T\T\obj\Debug\T.csprojResolveAssemblyReference.cache
+D:\#c__\T\T\T\bin\Debug\T.exe
+D:\#c__\T\T\T\bin\Debug\T.pdb
+D:\#c__\T\T\T\obj\Debug\T.exe
+D:\#c__\T\T\T\obj\Debug\T.pdb
+D:\#c__\ТестовоеЗадание_Сибирев\Программа\T\bin\Debug\T.exe.config
+D:\#c__\ТестовоеЗадание_Сибирев\Программа\T\obj\Debug\T.exe
+D:\#c__\ТестовоеЗадание_Сибирев\Программа\T\obj\Debug\T.pdb
+D:\#c__\ТестовоеЗадание_Сибирев\Программа\T\bin\Debug\T.exe
+D:\#c__\ТестовоеЗадание_Сибирев\Программа\T\bin\Debug\T.pdb
