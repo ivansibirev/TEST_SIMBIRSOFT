@@ -9,7 +9,7 @@ namespace T
     public class TupleListDictionaryClass
     {
         public Tuple<string>[] LS = new Tuple<string>[5000];
-         
+        public int Count = 0;
         /// <summary>Конструктор + загрузка из файла</summary>
         public TupleListDictionaryClass(string pathDictionary)
         {
@@ -21,6 +21,7 @@ namespace T
                 {
                     this.LS[counter] = new Tuple<string>( s);
                     counter++;
+                    this.Count++;
                 }
                 sr.Close();
             }catch{
@@ -33,6 +34,7 @@ namespace T
                 {
                     this.LS[counter] = new Tuple<string>(s);
                     counter++;
+                    this.Count++;
                 }
                 sr.Close();
             }
