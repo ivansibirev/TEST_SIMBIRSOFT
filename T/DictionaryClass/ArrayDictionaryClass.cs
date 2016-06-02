@@ -9,6 +9,8 @@ namespace T
     public class ArrayDictionaryClass
     {
         public string[] LS = new string[5000];
+        public int Count = 0;
+        //public int Count = 0;
         /// <summary>Конструктор + загрузка из файла</summary>
         public ArrayDictionaryClass(string pathDictionary)
         {
@@ -21,6 +23,7 @@ namespace T
                 {
                     this.LS[counter]=s;
                     counter++;
+                    this.Count++;
                 }
                 sr.Close();
             }catch{

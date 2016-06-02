@@ -1,0 +1,7 @@
+D:\Курсы C#\TEST_SIMBIRSOFT\UnitTestProject2\bin\Debug\UnitTestProject2.dll
+D:\Курсы C#\TEST_SIMBIRSOFT\UnitTestProject2\bin\Debug\UnitTestProject2.pdb
+D:\Курсы C#\TEST_SIMBIRSOFT\UnitTestProject2\obj\Debug\UnitTestProject2.csprojResolveAssemblyReference.cache
+D:\Курсы C#\TEST_SIMBIRSOFT\UnitTestProject2\obj\Debug\UnitTestProject2.dll
+D:\Курсы C#\TEST_SIMBIRSOFT\UnitTestProject2\obj\Debug\UnitTestProject2.pdb
+D:\Курсы C#\TEST_SIMBIRSOFT\UnitTestProject2\bin\Debug\T.exe
+D:\Курсы C#\TEST_SIMBIRSOFT\UnitTestProject2\bin\Debug\T.pdb
