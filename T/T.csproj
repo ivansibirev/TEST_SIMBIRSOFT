@@ -42,8 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DictionaryClass\ArrayDictionaryClass.cs" />
+    <Compile Include="DictionaryClass\ArrayListDictionaryClass.cs" />
+    <Compile Include="DictionaryClass\DictionaryDictionaryClass.cs" />
+    <Compile Include="DictionaryClass\HashtableListDictionaryClass.cs" />
+    <Compile Include="DictionaryClass\ListDictionaryClass.cs" />
     <Compile Include="C_W.cs" />
-    <Compile Include="DictionaryClass.cs" />
+    <Compile Include="DictionaryClass\DictionaryClass.cs" />
+    <Compile Include="DictionaryClass\QueueArrayListDictionaryClass.cs" />
+    <Compile Include="DictionaryClass\StackArrayListDictionaryClass.cs" />
+    <Compile Include="DictionaryClass\TupleListDictionaryClass.cs" />
     <Compile Include="HTMLConnectionClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,6 +59,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

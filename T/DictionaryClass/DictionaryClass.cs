@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace T
 {
+    /*Array (массив);
+    List (список);Dictionary (словарь);
+    ArrayList (маразм);Hashtable (хэш-таблица);
+    Tuple (кортеж);BitArray (битовый массив);
+    Stack (стэк);Queue (очередь);*/
+    //Dictionary<string, string> openWith = new Dictionary<string, string>();
+    //QueueArrayListDictionaryClass
     public class DictionaryClass
     {
         public List<string> LS = new List<string>();
@@ -32,7 +39,7 @@ namespace T
             }
         }
         /// <summary>Получить содержимое словаря в виде строки для вывода на экран.</summary>
-        public override string ToString()
+        public string ThisToString()
         {
             string rez = "Dictionary:";
             foreach (string s in this.LS)
@@ -53,8 +60,8 @@ namespace T
                     WorkWord += TheWord.Substring(0, TheWord.Length - 1);
                     if ((TheWord[TheWord.Length - 1] != '.') &&
                         (TheWord[TheWord.Length - 1] != ',') &&
-                        (TheWord[TheWord.Length - 1] != ' ')&&
-                        (TheWord[TheWord.Length - 1] != '?')&&
+                        (TheWord[TheWord.Length - 1] != ' ') &&
+                        (TheWord[TheWord.Length - 1] != '?') &&
                         (TheWord[TheWord.Length - 1] != '!')
                         )
                         WorkWord += TheWord[TheWord.Length - 1];

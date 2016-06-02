@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using MultiDictionary = T.ArrayDictionaryClass;
+//using MultiDictionary = T.ArrayListDictionaryClass;
+//using MultiDictionary = T.DictionaryClass;
+//using MultiDictionary = T.DictionaryDictionaryClass;
+//using MultiDictionary = T.HashtableListDictionaryClass;
+//using MultiDictionary = T.ListDictionaryClass;
+//using MultiDictionary = T.QueueArrayListDictionaryClass;
+//using MultiDictionary = T.StackArrayListDictionaryClass;
+//using MultiDictionary = T.TupleListDictionaryClass;
 namespace T
 {
     class Program
@@ -18,7 +26,7 @@ namespace T
         /// <param name="MaxLineCount">Максимум предложений в HTMl файле</param>
         static void DoIt(string TextFilePath, string DictionaryFilePath, int MaxLineCount)
         {
-            DictionaryClass myDictionary = new DictionaryClass(DictionaryFilePath);
+            MultiDictionary myDictionary = new MultiDictionary(DictionaryFilePath);
             try {
                 System.IO.StreamReader sr = System.IO.File.OpenText(TextFilePath);
                 sr.Close();
