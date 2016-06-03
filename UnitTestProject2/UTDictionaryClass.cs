@@ -6,9 +6,11 @@ namespace UnitTestProject2
     [TestClass]
     public class UTDictionaryClass
     {
+        
         [TestMethod]
         public void UT_DC_00()
         {
+
             T.DictionaryClass DC = new T.DictionaryClass("Dictionary_UT.txt");
             Assert.AreEqual(true, DC.LS.Count == 0);
         }
