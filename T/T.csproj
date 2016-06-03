@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="DictionaryClass\ArrayDictionaryClass.cs" />
     <Compile Include="DictionaryClass\ArrayListDictionaryClass.cs" />
+    <Compile Include="DictionaryClass\DictionaryBD.cs" />
     <Compile Include="DictionaryClass\DictionaryDictionaryClass.cs" />
     <Compile Include="DictionaryClass\HashtableListDictionaryClass.cs" />
     <Compile Include="DictionaryClass\ListDictionaryClass.cs" />

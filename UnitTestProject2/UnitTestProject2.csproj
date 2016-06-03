@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UTDictionaryBDClass.cs" />
     <Compile Include="UTTupleListDictionaryClass.cs" />
     <Compile Include="UTStackArrayListDictionaryClass.cs" />
     <Compile Include="UTQueueArrayListDictionaryClass.cs" />

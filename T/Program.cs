@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MultiDictionary = T.ArrayDictionaryClass;
+//using System.Windows.Forms;
+using MultiDictionary = T.DictionaryBDClass;
+//using MultiDictionary = T.ArrayDictionaryClass;
 //using MultiDictionary = T.ArrayListDictionaryClass;
 //using MultiDictionary = T.DictionaryClass;
 //using MultiDictionary = T.DictionaryDictionaryClass;
@@ -17,6 +19,9 @@ namespace T
     class Program
     {
         static void Main(string[] args){
+
+            
+                //Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Dictionary;Data Source=ЙЦУКЕНГУРУ-ПК
             DoIt("TheTextFile.txt", "Dictionary.txt",10);            
             Console.Read();
         }
