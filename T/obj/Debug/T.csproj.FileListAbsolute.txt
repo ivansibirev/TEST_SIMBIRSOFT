@@ -15,3 +15,7 @@ D:\Курсы C#\TEST_SIMBIRSOFT\T\bin\Debug\T.pdb
 D:\Курсы C#\TEST_SIMBIRSOFT\T\obj\Debug\T.csprojResolveAssemblyReference.cache
 D:\Курсы C#\TEST_SIMBIRSOFT\T\obj\Debug\T.exe
 D:\Курсы C#\TEST_SIMBIRSOFT\T\obj\Debug\T.pdb
+D:\Курсы C#\TEST_SIMBIRSOFT\T\bin\Debug\EntityFramework.dll
+D:\Курсы C#\TEST_SIMBIRSOFT\T\bin\Debug\EntityFramework.SqlServer.dll
+D:\Курсы C#\TEST_SIMBIRSOFT\T\bin\Debug\EntityFramework.xml
+D:\Курсы C#\TEST_SIMBIRSOFT\T\bin\Debug\EntityFramework.SqlServer.xml

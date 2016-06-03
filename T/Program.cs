@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //using System.Windows.Forms;
-using MultiDictionary = T.DictionaryBDClass;
+using MultiDictionary = T.DictionaryClassEntityFramework;
+//using MultiDictionary = T.DictionaryBDClass;
 //using MultiDictionary = T.ArrayDictionaryClass;
 //using MultiDictionary = T.ArrayListDictionaryClass;
 //using MultiDictionary = T.DictionaryClass;
@@ -46,13 +47,17 @@ namespace T
                 string StringOverview = "";//Строка "обзора конца предложения".
                 string a = "";//Вспомогательная переменная
                 HTMLConnectionClass HTMLConnection = new HTMLConnectionClass(MaxLineCount, 1);
+                XMLConnectionClass XMLConnection = new XMLConnectionClass(MaxLineCount, 1);
+                
                 Func<string, object> Writer = (string w) =>
                 {   //Лямбда-выражение или функция централизованного вывода (записи) текста на экран, в HTML файл...
                     if (HTMLConnection.counter > HTMLConnection.maxcount)
                     {   //Смена HTML файла
-                        HTMLConnection.fin();
-                        HTMLConnectionClass newConnection = new HTMLConnectionClass(HTMLConnection.maxcount, HTMLConnection.id + 1);
-                        HTMLConnection = newConnection;
+                        HTMLConnection.fin(); XMLConnection.fin();
+                        HTMLConnectionClass newHTMLConnection = new HTMLConnectionClass(HTMLConnection.maxcount, HTMLConnection.id + 1);
+                        XMLConnectionClass newXMLConnection = new XMLConnectionClass(XMLConnection.maxcount, XMLConnection.id + 1);
+                        HTMLConnection = newHTMLConnection;
+                        XMLConnection = newXMLConnection;
                     }
                     foreach (string str in a.Split(' '))
                     {   //Пишем текст
@@ -60,16 +65,19 @@ namespace T
                         {   //Проверка, есть ли в словаре слово.
                             C.W.Cyan(str + " ");//Пишем на экран в цвере.
                             HTMLConnection.WriteLine("<i><b>" + str + "</b></i>");//Пишем в HTML жирным курсивом.
+                            XMLConnection.WriteLine(str,true);
                         }
                         else
                         {
                             C.W.Gray(str + " ");
                             HTMLConnection.WriteLine(str);
+                            XMLConnection.WriteLine(str, false);
                         }
                     }
                     C.W.n();
                     HTMLConnection.WriteLine("<br>");
                     HTMLConnection.counter++;
+                    XMLConnection.counter++;
                     return new object();
                 };
                 while ((s = sr.ReadLine()) != null)
